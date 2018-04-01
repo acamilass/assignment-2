@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></>contrateDevs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"         
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116676726-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116676726-1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '159814578031811');
+        fbq('track', 'PageView');
+    </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=159814578031811&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+      
+    <!-- Hotjar Tracking Code for www.contratedevs.com.br -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:833093,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+</head>
+
+<body>
+        
+    
+        <!-- header -->
+        <header>
+                <div class="logo-container">
+                    <img src="images/logo-header.png" class="img-responsive"> 
+                </div>
+                <div class="container">   
+                    <h4>APRIMORE O SEU CONHECIMENTO PROFISSIONAL <br> EM APENAS 3 MINUTOS!</h4>
+                    <h5>Seja você um recrutador ou dev, <span style="color:#00ff0c">responda a nossa pesquisa</span> <br> e receba o resultado e dicas infalíveis no seu e-mail.</h5>
+                </div>
+        </header>
+    
+    <section>
+        <!-- form -->
+        <div class="background-form">
+            <form class="form" onsubmit="quest.adiciona(event)" id="myForm">
+                <h3>Preencha o formulário</h3>
+                <!-- Campo nome -->
+                <div class="form-group">
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite o seu nome" required>
+                </div>
+                <!-- Campo email -->
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Digite o seu email" required>
+                </div>
+                <!-- Radio contratante/candidato -->
+                <div class="radio-inline">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CONTRATANTE" required> Contratante
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CANDIDATO" required> Candidato
+                    </label>
+                </div>
+                <!-- Primera pergunta -->  
+                <div class="form-group">
+                    <label for="inputText">Você já teve problema com análise de competências técnicas em um processo seletivo?</label>
+                    <textarea type="text" class="form-control" id= "pergunta1" rows="3" placeholder="Sua resposta" required></textarea>
+                </div>
+                <!-- Segunda pergunta -->  
+                <div class="form-group">
+                    <label for="inputText">Como você lidou ou está lidando com isso?</label>
+                    <textarea type="text" class="form-control" id= "pergunta2" rows="3" placeholder="Sua resposta" required></textarea>
+                </div>
+                <!-- Segunda pergunta -->  
+                <div class="form-group">
+                    <label for="inputText">Qual seria a solução ideal para resolver isso?</label>
+                    <textarea type="text" class="form-control" id= "pergunta3" rows="3" placeholder="Sua resposta" required></textarea>
+                </div>
+
+                <button type="submit" class="formSubmit">Enviar</button>
+                
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <footer class="footerInfo">
+            <div class="imageFooter"><img src="images/logo-footer.png"></div>
+        </footer>
+    </section>
+</div>
+    
+  
+    <!-- update the version number as needed -->
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/4.12.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/4.12.0/firebase-auth.js"></script>
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/4.12.0/firebase-database.js"></script>
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/4.12.0/firebase-messaging.js"></script>
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/4.12.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src="https://gama-assignment-2.firebaseapp.com/__/firebase/init.js"></script>
+
+    <!-- Optional JavaScript -->     
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"         crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"         crossorigin="anonymous"></script>
+
+    <script src="./js/services/util.service.js"></script>
+    <script src="./js/services/quest.service.js"></script>
+
+    <script src="./js/models/quest.model.js"></script>
+
+    <script src="./js/controllers/quest.controller.js"></script>
+    
+    
+    <script src="js/FormController.js"></script>
+
+    <script>
+        let quest = new QuestController();
+    </script>
+
+</body>
+
+
+</html>
