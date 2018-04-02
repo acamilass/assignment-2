@@ -60,8 +60,10 @@
                     <img src="images/logo-header.png" class="img-responsive"> 
                 </div>
                 <div class="container">   
-                    <h4>APRIMORE O SEU CONHECIMENTO PROFISSIONAL <br> EM APENAS 3 MINUTOS!</h4>
-                    <h5>Seja você um recrutador ou dev, <span style="color:#00ff0c">responda a nossa pesquisa</span> <br> e receba o resultado e dicas infalíveis no seu e-mail.</h5>
+                    <h3>Obrigado por aceitar participar de nossa pesquisa que deve durar, <br>no máximo, 2 minutos! Você vai nos ajudar muito <span style="color:#00ff0c">e terá acesso a todo o estudo!</span> </h3>
+                 <!--   <h5>Seja você um recrutador ou dev, <span style="color:#00ff0c">responda a nossa pesquisa</span> <br> e receba o resultado e dicas infalíveis no seu e-mail.</h5> -->
+                    <h5>Queremos falar com Recrutadores e Desenvolvedores para entender a dor ao aplicar ou participar de uma avaliação técnica durante um processo seletivo e assim melhorar a seleção dos profissionais. Por isso escolhemos você :)
+                    </h5>
                 </div>
         </header>
     
@@ -83,26 +85,35 @@
                 <!-- Radio contratante/candidato -->
                 <div class="radio-inline">
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CONTRATANTE" required> Contratante
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CONTRATANTE" required> Sou recrutador
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CANDIDATO" required> Candidato
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="CANDIDATO" required> Sou candidato
                     </label>
                 </div>
                 <!-- Primera pergunta -->  
-                <div class="form-group">
+               <!-- <div class="form-group">
                     <label for="inputText">Você já teve problema com análise de competências técnicas em um processo seletivo?</label>
                     <textarea type="text" class="form-control" id= "pergunta1" rows="3" placeholder="Sua resposta" required></textarea>
+                </div> -->
+                <div class="radio-inline2">
+                    <label for="radio-inline2">Você já teve problema com análise de competências técnicas em um processo seletivo?</label>
+                    <label class="radio-inline2">
+                        <input type="radio" name="pergunta1" id="pergunta1" value="Sim" required> Sim
+                    </label>
+                    <label class="radio-inline2">
+                        <input type="radio" name="pergunta1" id="pergunta1" value="Não" required> Não
+                    </label>
                 </div>
                 <!-- Segunda pergunta -->  
                 <div class="form-group">
-                    <label for="inputText">Como você lidou ou está lidando com isso?</label>
-                    <textarea type="text" class="form-control" id= "pergunta2" rows="3" placeholder="Sua resposta" required></textarea>
+                    <label for="inputText">Qual foi o problema e como você lidou ou está lidando com isso?</label>
+                    <textarea type="text" class="form-control" id= "pergunta2" rows="2" placeholder="Sua resposta" required></textarea>
                 </div>
                 <!-- Segunda pergunta -->  
                 <div class="form-group">
-                    <label for="inputText">Qual seria a solução ideal para resolver isso?</label>
-                    <textarea type="text" class="form-control" id= "pergunta3" rows="3" placeholder="Sua resposta" required></textarea>
+                    <label for="inputText">Em sua opinião qual é a melhor forma de aplicar esse tipo de teste?</label>
+                    <textarea type="text" class="form-control" id= "pergunta3" rows="2" placeholder="Sua resposta" required></textarea>
                 </div>
 
                 <button type="submit" class="formSubmit">Enviar</button>

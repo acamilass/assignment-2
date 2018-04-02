@@ -12,9 +12,9 @@ class QuestModel {
 
         const resp = {};
      
-        resp['Você já teve problema com análise de competências técnicas em um processo seletivo?'] =  $("#pergunta1").val();
-        resp['Como você lidou ou está lidando com isso?'] = $("#pergunta2").val();
-        resp['Qual seria a solução ideal para resolver isso?'] = $("#pergunta3").val();
+        resp['Você já teve problema com análise de competências técnicas em um processo seletivo?'] =  $('input[name=pergunta1]:checked', '#myForm').val();
+        resp['Qual foi o problema e como você lidou ou está lidando com isso?'] = $("#pergunta2").val();
+        resp['Em sua opinião qual é a melhor forma de aplicar esse tipo de teste?'] = $("#pergunta3").val();
     ;
         return resp;
       }
