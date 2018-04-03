@@ -47,7 +47,18 @@ header h3 {
 
 .background-form{
     background: url("../images/bg-form-FINAL.png"); 
-    height:800px;
+    height:820px;
+}
+
+.bloco-video {
+    background: url("../images/bg-video-final.jpg");
+    height: 460px;
+    padding-left: 400px;
+    padding-top: 35px;
+}
+
+.bloco-video h3 {
+    padding-bottom: 10px;
 }
 
 .radio-Inline {
