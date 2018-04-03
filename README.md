@@ -13,6 +13,7 @@ Hackers: Ana Camila e Gustavo Bertolino
 Para persistência de dados 
 - Foi criada uma conta no Firebase;
 - No código JavaScript foi criado um constructor que conectou o código local com o db;
+- Foram então criadas classes que recebem e organizam os dados. 
 
 Estratégia de desenvolvimento
 
